@@ -1,11 +1,10 @@
 <idea-plugin>
     <id>com.damjanvucina.jiraffe</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>Jiraffe</name>
+    <vendor email="vucinadamjan@gmail.com" url="http://www.yourcompany.com">Damjan Vucina</vendor>
 
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    IntelliJ platform plugin for populating Jira Worklogs automatically
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
