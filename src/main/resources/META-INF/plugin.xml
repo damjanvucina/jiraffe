@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.damjanvucina.jiraffe</id>
     <name>Jiraffe</name>
-    <vendor email="vucinadamjan@gmail.com" url="http://www.yourcompany.com">Damjan Vucina</vendor>
+    <vendor email="vucinadamjan@gmail.com" url="https://www.linkedin.com/in/damjanvucina/">Damjan Vucina</vendor>
 
     <description><![CDATA[
     IntelliJ platform plugin for populating Jira Worklogs automatically
