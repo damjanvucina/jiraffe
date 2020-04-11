@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.damjanvucina.jiraffe</id>
     <name>Jiraffe</name>
-    <vendor email="vucinadamjan@gmail.com" url="https://www.linkedin.com/in/damjanvucina/">Damjan Vucina</vendor>
+    <vendor email="vucinadamjan@gmail.com" url="https://www.linkedin.com/in/damjanvucina">Damjan Vucina</vendor>
 
     <description><![CDATA[
     IntelliJ platform plugin for populating Jira Worklogs automatically
@@ -11,11 +11,17 @@
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
-    </extensions>
+    <vendor url="https://www.linkedin.com/in/damjanvucina">Jira Worklog population plugin</vendor>
 
     <actions>
-        <!-- Add your actions here -->
+        <group id="com.damjanvucina.jiraffe.actions.mainGroup" text="Jiraffe" popup="true" icon="Icons.jiraffeLogo">
+            <add-to-group group-id="ToolsMenu" anchor="first" />
+            <action class="com.damjanvucina.jiraffe.actions.PopupDialogAction" id="org.intellij.sdk.action.testPopup"
+                    text="Preview Worklogs" description="Preview time spent on checked out branches" icon="Icons.gitBranch">
+            </action>
+            <action class="com.damjanvucina.jiraffe.actions.PopupDialogAction" id="org.intellij.sdk.action.testPopup2"
+                    text="Log Jira" description="Log Jira My Work according to logged worklogs" icon="Icons.clock">
+            </action>
+        </group>
     </actions>
 </idea-plugin>
