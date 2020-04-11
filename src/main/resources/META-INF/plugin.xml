@@ -16,11 +16,14 @@
     <actions>
         <group id="com.damjanvucina.jiraffe.actions.mainGroup" text="Jiraffe" popup="true" icon="Icons.jiraffeLogo">
             <add-to-group group-id="ToolsMenu" anchor="first" />
-            <action class="com.damjanvucina.jiraffe.actions.PopupDialogAction" id="org.intellij.sdk.action.testPopup"
+            <action class="com.damjanvucina.jiraffe.actions.PopupDialogAction" id="org.intellij.sdk.action.previewWorklogs"
                     text="Preview Worklogs" description="Preview time spent on checked out branches" icon="Icons.gitBranch">
             </action>
-            <action class="com.damjanvucina.jiraffe.actions.PopupDialogAction" id="org.intellij.sdk.action.testPopup2"
+            <action class="com.damjanvucina.jiraffe.actions.PopupDialogAction" id="org.intellij.sdk.action.logJira"
                     text="Log Jira" description="Log Jira My Work according to logged worklogs" icon="Icons.clock">
+            </action>
+            <action class="com.damjanvucina.jiraffe.actions.PopupDialogAction" id="org.intellij.sdk.action.settings"
+                    text="Settings" description="Miscellaneous plugin settings" icon="Icons.settings">
             </action>
         </group>
     </actions>
