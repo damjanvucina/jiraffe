@@ -1,6 +1,5 @@
 package com.damjanvucina.jiraffe.actions;
 
-import com.damjanvucina.jiraffe.components.BranchTracker;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
@@ -71,9 +70,5 @@ public class PopupDialogAction extends AnAction {
         // Set the availability based on whether a project is open
         Project project = e.getProject();
         e.getPresentation().setEnabledAndVisible(project != null);
-
-        if (project != null && BranchTracker.repositoryManager == null) {
-            BranchTracker.initialize(project);
-        }
     }
 }
