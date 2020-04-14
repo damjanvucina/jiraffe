@@ -1,5 +1,7 @@
 package com.damjanvucina.jiraffe.vcs;
 
+import com.damjanvucina.jiraffe.ui.UserNotification;
+import com.intellij.notification.NotificationType;
 import com.intellij.openapi.project.Project;
 import com.intellij.util.messages.MessageBusConnection;
 import git4idea.repo.GitRepository;
@@ -61,8 +63,9 @@ public class BranchTracker implements IGitRepositoryChangeTracker{
 
     @Override
     public void repositoryChangeOccurred(GitRepository repository) {
-        System.out.println("novi branch je");
-        System.out.println(repository.getCurrentBranch().getName());
+        UserNotification notification = new UserNotification();
+        String branchName = repository.getCurrentBranch().getName();
+        notification.notify("Branch changed. New branch:" + branchName, NotificationType.INFORMATION);
     }
 
     @Override
